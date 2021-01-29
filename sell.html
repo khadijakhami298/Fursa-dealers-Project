@@ -1,0 +1,108 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Vendor Registration Form</title>
+    <!--  <style type="text/css">
+            /*You can write all css styles here*/
+            label{
+                font-size: 50px;
+                color: maroon;    
+            }
+        </style> -->
+        
+        <!--linking html with css page rel=relation href=location/name of the css page-->
+        <link rel="icon" href="icon.jpg" type="image/icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="nav">
+            <!--Logo/picture of our site-->
+            
+           <!-- Another way of writting css codes with html
+            <label style="font-size: 50px; color: maroon;">Fursa</label> -->
+            
+            <!--<label id="logo">Fursa</label>-->
+            <a href="home.html"><img src="icon3.jpg" id="logo2"></a>
+            <!--On our header we will have list of our links using unordered list(ul) and inside it we will have lists of links-->
+            <ul class="top-left-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="post.html">Posts</a></li>
+                <li><a href="about.html">About Us</a></li>   
+            </ul>
+            <ul class="top-right-nav">
+                <li><a href="sell.html" id="active">Want to Sell</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+           <!-- <div class="logo-login"><img src="dealers.jpg"></div> -->
+            <h2 style="text-align: center">Vendor Registration Form</h2>
+            <div class="form">
+                <form method="POST"> <!--credentials/so as information not to be seen in the url-->
+                <label>Vendor Full Name:</label>
+                <input type="text" name="fullname" placeholder="Full Name"><br>
+                <label>Company Name:</label>
+                <input type="text" name="companyname" placeholder="Company Name"><br>
+                <label>Product/Service Name:</label>
+                <input type="text" name="productservicename" placeholder="Product/Service"><br>
+               <!-- <b><label>Nationality:</label></b>
+                <input type="text" name="nationality" placeholder="Nationality"><br> or -->
+                <select name="nationality">
+                    <option>---Select Country--</option>
+                    <option>Tanzania</option>
+                    <option>Kenya</option>
+                    <option>Uganda</option>
+                </select>
+                <label>City Name:</label>
+                <input type="text" name="cityname" placeholder="City Name"><br>
+                <label>Email Address:</label>
+                <input type="email" name="email" placeholder="Enter Email"><br>
+                <label>Phone Number:</label>
+                <input type="number" name="phonenumber" placeholder="Enter Phone Number"><br>
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Enter Password"><br>
+                <label>Confirm Password:</label>
+                <input type="password" name="password" placeholder="Confirm Password"><br>
+                <button>Register</button>
+                </form>
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            
+           <div class="footer1"> <!--About Us content*-->
+               <h3 style="color:#404040">Services</h3>
+                <ul>
+                  <li><a href="#" style="text-decoration:none;color: #4d4d4d">Online Help</a></li>
+                   <li><a href="#" style="text-decoration:none;color: #4d4d4d">Contact Us</a></li>
+                   <li><a href="#" style="text-decoration:none;color: #4d4d4d">FAQ's</a></li>
+                  </ul>
+            </div>
+            
+            <div class="footer2">  <!--Contact Us content-->
+                <h3 style="color:#404040">Policies</h3>
+                <ul>
+                   <li><a href="#" style="text-decoration:none;color: #4d4d4d">Terms and Conditions</a></li>
+                   <li><a href="#" style="text-decoration:none;color: #4d4d4d">Privacy Policies</a></li>
+                   <li><a href="#" style="text-decoration:none;color: #4d4d4d">Billing Systems</a></li>
+               </ul>
+            
+            </div>
+            
+            <div class="footer3">  <!--Feedback Form-->
+                <h3 style="color:#404040">Feedback</h3>
+                <form>
+                    <input type="email" placeholder="Email Address"><br>
+                    <textarea name="body" placeholder="Content.."></textarea><br>
+                    <button name="Submit">Submit</button>
+                </form>
+            
+            </div>
+        
+        </div>
+    </body>
+</html>
+
